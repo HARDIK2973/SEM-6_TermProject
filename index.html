@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Website</title>
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+      height: 0;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .nested-text {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Project</h1>
+    <h2>Intelligent Seat Counter with Audio Alerts & Limit Configuration</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/fidch5IWsOU" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="nested-text">
+      <h2>Details</h2>
+      <p>The project involves the creation of an intelligent seating solution that uses Arduino, two E18-
+        D80NK infrared sensor modules, and a rotary encoder for bidirectional counting and limit 
+        configuration. The DFPlayer Mini has been integrated to control a speaker that provides audio output 
+        based on specific conditions, with all audio files stored in the memory card and played in mp3 
+        format. The system starts with a greeting message and gives an alert message through the speaker 
+        when the counting exceeds the predetermined limit of total seats. Additionally, the project utilizes a 
+        16*2 LCD to display the counts and other important information.</p>
+    </div>
+  </div>
+</body>
+</html>
